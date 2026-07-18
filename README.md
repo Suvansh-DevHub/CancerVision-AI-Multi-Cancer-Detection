@@ -27,7 +27,7 @@ The platform combines automated organ identification, multi-model inference, exp
 
 ---
 
-# Supported Organs
+## Supported Organs
 
 | Organ | Imaging Modality | Prediction |
 |---------|-----------------|------------|
@@ -38,34 +38,38 @@ The platform combines automated organ identification, multi-model inference, exp
 
 ---
 
-# Supported Cancer Types
+## Supported Cancer Types
 
 ### Lung
+
 - Adenocarcinoma
 - Large Cell Carcinoma
 - Squamous Cell Carcinoma
 - Normal
 
 ### Brain
+
 - Glioma
 - Meningioma
 - Pituitary Tumor
 - Normal
 
 ### Breast
+
 - Cancer
 - Normal
 
 ### Skin
+
 - Basal Cell Carcinoma
 - Melanoma
 - Normal
 
 ---
 
-# System Architecture
+## System Architecture
 
-```
+```text
                     Medical Image
                           │
                           ▼
@@ -98,7 +102,7 @@ The platform combines automated organ identification, multi-model inference, exp
 
 ---
 
-# Workflow
+## Workflow
 
 1. User uploads medical image(s).
 2. Basic patient information is provided.
@@ -115,9 +119,9 @@ The platform combines automated organ identification, multi-model inference, exp
 
 ---
 
-# Key Components
+## Key Components
 
-## Gatekeeper Model
+### Gatekeeper Model
 
 The Gatekeeper model automatically identifies the organ from the uploaded image and routes it to the appropriate specialized AI model.
 
@@ -125,7 +129,7 @@ This eliminates manual organ selection and creates a fully automated prediction 
 
 ---
 
-## Specialized Deep Learning Models
+### Specialized Deep Learning Models
 
 Each organ uses its own optimized deep learning model trained specifically for its imaging characteristics.
 
@@ -137,13 +141,13 @@ Each organ uses its own optimized deep learning model trained specifically for i
 
 ---
 
-## Explainable AI
+### Explainable AI
 
 To improve transparency and interpretability, CancerVision generates Grad-CAM heatmaps highlighting image regions that contribute most to the model's prediction.
 
 ---
 
-## Recommendation Engine
+### Recommendation Engine
 
 The platform combines:
 
@@ -154,7 +158,7 @@ to provide structured clinical guidance after prediction.
 
 ---
 
-## PDF Report
+### PDF Report
 
 Each analysis generates a downloadable PDF containing:
 
@@ -168,7 +172,7 @@ Each analysis generates a downloadable PDF containing:
 
 ---
 
-## Asynchronous Processing
+### Asynchronous Processing
 
 Long-running AI inference tasks are processed in the background using:
 
@@ -179,44 +183,44 @@ This keeps the user interface responsive during analysis.
 
 ---
 
-# Technology Stack
+## Technology Stack
 
-## Backend
+### Backend
 
 - Python
 - Flask
 - Celery
 - Redis
 
-## Deep Learning
+### Deep Learning
 
 - TensorFlow
 - Keras
 - MobileNet
 - Custom CNN Models
 
-## Computer Vision
+### Computer Vision
 
 - OpenCV
 - Pillow
 - NumPy
 - Grad-CAM
 
-## Frontend
+### Frontend
 
 - HTML
 - CSS
 - JavaScript
 
-## Report Generation
+### Report Generation
 
 - ReportLab
 
 ---
 
-# Project Structure
+## Project Structure
 
-```
+```text
 CancerVision/
 │
 ├── app.py
@@ -245,18 +249,18 @@ CancerVision/
 
 ---
 
-# Installation
+## Installation
 
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/CancerVision.git
+git clone https://github.com/Suvansh-DevHub/CancerVision-AI-Multi-Cancer-Detection.git
 ```
 
-Move into project directory
+Move into the project directory
 
 ```bash
-cd CancerVision
+cd CancerVision-AI-Multi-Cancer-Detection
 ```
 
 Install dependencies
@@ -277,7 +281,7 @@ Start Celery Worker
 celery -A tasks worker --loglevel=info
 ```
 
-Run Flask Application
+Run the Flask application
 
 ```bash
 python app.py
@@ -285,21 +289,21 @@ python app.py
 
 ---
 
-# Future Improvements
+## Future Improvements
 
 - Docker Deployment
 - Cloud Deployment (AWS)
-- Multi-user Authentication
-- DICOM File Support
-- Electronic Health Record Integration
-- Additional Cancer Types
 - REST API
 - Mobile Application
+- DICOM File Support
+- Electronic Health Record Integration
+- Multi-user Authentication
+- Additional Cancer Types
 - Real-time Monitoring Dashboard
 
 ---
 
-# Disclaimer
+## Disclaimer
 
 CancerVision is intended for research and educational purposes only.
 
