@@ -1,6 +1,10 @@
 # 🩺 CancerVision
 
-![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-Deep%20Learning-FF6F00?logo=tensorflow&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white) ![AI](https://img.shields.io/badge/Artificial%20Intelligence-red) ![Medical](https://img.shields.io/badge/Medical%20Image%20Analysis-success)
+![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Deep%20Learning-FF6F00?logo=tensorflow&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white)
+![AI](https://img.shields.io/badge/Artificial%20Intelligence-red)
+![Medical](https://img.shields.io/badge/Medical%20Image%20Analysis-success)
 
 ### AI-Based Multi-Cancer Detection & Subtype Classification System
 
@@ -8,9 +12,11 @@ CancerVision is an AI-powered medical image analysis platform designed to detect
 
 The platform combines automated organ identification, multi-model inference, explainable AI (Grad-CAM), AI-assisted clinical recommendations, and downloadable PDF reports into a single unified application.
 
+> **This project was developed as a Final Year B.Tech project focused on AI-driven medical image analysis and explainable deep learning for multi-cancer detection.**
+
 ---
 
-## 📌 Features
+# 📌 Features
 
 - 🧠 Automatic organ detection using a Gatekeeper Model
 - 🫁 Lung Cancer Detection & Subtype Classification
@@ -27,10 +33,10 @@ The platform combines automated organ identification, multi-model inference, exp
 
 ---
 
-## Supported Organs
+# 📂 Supported Organs
 
 | Organ | Imaging Modality | Prediction |
-|---------|-----------------|------------|
+|--------|------------------|------------|
 | Lung | CT Scan, Chest X-ray | Cancer Detection + Subtype |
 | Brain | MRI | Tumor Detection + Subtype |
 | Breast | Mammography | Cancer Detection |
@@ -38,28 +44,28 @@ The platform combines automated organ identification, multi-model inference, exp
 
 ---
 
-## Supported Cancer Types
+# 🧬 Supported Cancer Types
 
-### Lung
+## Lung
 
 - Adenocarcinoma
 - Large Cell Carcinoma
 - Squamous Cell Carcinoma
 - Normal
 
-### Brain
+## Brain
 
 - Glioma
 - Meningioma
 - Pituitary Tumor
 - Normal
 
-### Breast
+## Breast
 
 - Cancer
 - Normal
 
-### Skin
+## Skin
 
 - Basal Cell Carcinoma
 - Melanoma
@@ -67,7 +73,7 @@ The platform combines automated organ identification, multi-model inference, exp
 
 ---
 
-## System Architecture
+# 🏗️ System Architecture
 
 ```text
                     Medical Image
@@ -102,65 +108,67 @@ The platform combines automated organ identification, multi-model inference, exp
 
 ---
 
-## Workflow
+# 🔄 Workflow
 
-1. User uploads medical image(s).
-2. Basic patient information is provided.
-3. Images are preprocessed automatically.
-4. Gatekeeper identifies the organ.
+1. Upload one or more medical images.
+2. Enter basic patient information.
+3. Images are automatically preprocessed.
+4. Gatekeeper model identifies the organ.
 5. Appropriate AI model performs inference.
 6. Cancer detection is performed.
 7. Subtype classification (where applicable).
 8. Confidence score is calculated.
-9. Grad-CAM heatmap is generated.
+9. Grad-CAM visualization is generated.
 10. Clinical recommendations are produced.
-11. Structured PDF report is generated.
+11. A structured PDF report is generated.
 12. Results are displayed to the user.
 
 ---
 
-## Key Components
+# 🧩 Key Components
 
-### Gatekeeper Model
+## Gatekeeper Model
 
-The Gatekeeper model automatically identifies the organ from the uploaded image and routes it to the appropriate specialized AI model.
+The Gatekeeper model automatically identifies the organ from the uploaded medical image and routes it to the corresponding specialized AI model.
 
-This eliminates manual organ selection and creates a fully automated prediction pipeline.
+This eliminates manual organ selection and enables a fully automated prediction pipeline.
 
 ---
 
-### Specialized Deep Learning Models
+## Specialized Deep Learning Models
 
-Each organ uses its own optimized deep learning model trained specifically for its imaging characteristics.
+Each organ uses an independently trained deep learning model optimized for its imaging characteristics.
+
+Models included:
 
 - Lung Model
 - Brain Model
-- Breast Main Model
+- Breast Primary Model
 - Breast Fallback Model
 - Skin Model
 
 ---
 
-### Explainable AI
+## Explainable AI
 
-To improve transparency and interpretability, CancerVision generates Grad-CAM heatmaps highlighting image regions that contribute most to the model's prediction.
+CancerVision integrates **Grad-CAM** to highlight the regions of an image that contribute most to the model's prediction, improving interpretability and transparency.
 
 ---
 
-### Recommendation Engine
+## Clinical Recommendation Engine
 
-The platform combines:
+The recommendation engine combines:
 
 - Rule-based recommendations
 - AI-generated recommendations
 
-to provide structured clinical guidance after prediction.
+to provide structured post-prediction clinical guidance.
 
 ---
 
-### PDF Report
+## PDF Report Generation
 
-Each analysis generates a downloadable PDF containing:
+Each prediction generates a downloadable PDF report containing:
 
 - Patient Information
 - Prediction Result
@@ -172,53 +180,53 @@ Each analysis generates a downloadable PDF containing:
 
 ---
 
-### Asynchronous Processing
+## Asynchronous Processing
 
-Long-running AI inference tasks are processed in the background using:
+Long-running inference tasks are executed in the background using:
 
 - Celery
 - Redis
 
-This keeps the user interface responsive during analysis.
+This keeps the application responsive during prediction.
 
 ---
 
-## Technology Stack
+# 💻 Technology Stack
 
-### Backend
+## Backend
 
 - Python
 - Flask
 - Celery
 - Redis
 
-### Deep Learning
+## Deep Learning
 
 - TensorFlow
 - Keras
 - MobileNet
 - Custom CNN Models
 
-### Computer Vision
+## Computer Vision
 
 - OpenCV
 - Pillow
 - NumPy
 - Grad-CAM
 
-### Frontend
+## Frontend
 
 - HTML
 - CSS
 - JavaScript
 
-### Report Generation
+## Report Generation
 
 - ReportLab
 
 ---
 
-## Project Structure
+# 📁 Project Structure
 
 ```text
 CancerVision/
@@ -241,47 +249,64 @@ CancerVision/
 │   └── Gatekeeper/
 │
 ├── static/
-├── templates/
-├── reports/
-├── logs/
-└── uploads/
+└── templates/
 ```
 
 ---
 
-## Installation
+# 🚀 Installation
 
-Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/Suvansh-DevHub/CancerVision-AI-Multi-Cancer-Detection.git
 ```
 
-Move into the project directory
+### Move into the project directory
 
 ```bash
 cd CancerVision-AI-Multi-Cancer-Detection
 ```
 
-Install dependencies
+### Create a virtual environment
+
+```bash
+python -m venv venv
+```
+
+### Activate the virtual environment
+
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+**Linux / macOS**
+
+```bash
+source venv/bin/activate
+```
+
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run Redis
+### Start Redis
 
 ```bash
 redis-server
 ```
 
-Start Celery Worker
+### Start Celery Worker
 
 ```bash
 celery -A tasks worker --loglevel=info
 ```
 
-Run the Flask application
+### Run the Flask application
 
 ```bash
 python app.py
@@ -289,29 +314,41 @@ python app.py
 
 ---
 
-## Future Improvements
+# 🌐 Deployment
+
+**Current Status:** Not deployed.
+
+The application is currently intended for local execution because deep learning inference requires significant computational resources.
+
+---
+
+# 🔮 Future Improvements
 
 - Docker Deployment
+- Docker Compose
 - Cloud Deployment (AWS)
 - REST API
 - Mobile Application
 - DICOM File Support
-- Electronic Health Record Integration
+- Electronic Health Record (EHR) Integration
 - Multi-user Authentication
+- Model Quantization
+- ONNX Deployment
+- GPU Acceleration
 - Additional Cancer Types
 - Real-time Monitoring Dashboard
 
 ---
 
-## Disclaimer
+# ⚠️ Disclaimer
 
-CancerVision is intended for research and educational purposes only.
+CancerVision is intended solely for research and educational purposes.
 
-The predictions generated by the system are AI-assisted estimates and should **not** be considered a substitute for professional medical diagnosis or clinical decision-making.
+The predictions generated by the system are AI-assisted estimates and **must not** be considered a substitute for professional medical diagnosis, treatment, or clinical decision-making.
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Suvansh**
 
