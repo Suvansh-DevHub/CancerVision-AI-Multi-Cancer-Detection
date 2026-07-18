@@ -1,4 +1,7 @@
 # 🩺 CancerVision
+
+![Python](https://img.shields.io/badge/Python-3.10-blue) ![TensorFlow](https://img.shields.io/badge/TensorFlow-DeepLearning-orange) ![Flask](https://img.shields.io/badge/Flask-WebApp-black) ![License](https://img.shields.io/badge/License-MIT-green)
+
 ### AI-Based Multi-Cancer Detection & Subtype Classification System
 
 CancerVision is an AI-powered medical image analysis platform designed to detect multiple types of cancer and classify their subtypes using Deep Learning. The system analyzes medical images from different organs and automatically routes them to specialized AI models for accurate prediction.
