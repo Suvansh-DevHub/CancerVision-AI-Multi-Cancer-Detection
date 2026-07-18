@@ -1,6 +1,6 @@
 # 🩺 CancerVision
 
-![Python](https://img.shields.io/badge/Python-3.10-blue) ![TensorFlow](https://img.shields.io/badge/TensorFlow-DeepLearning-orange) ![Flask](https://img.shields.io/badge/Flask-WebApp-black) ![License](https://img.shields.io/badge/License-MIT-green)
+![Python](https://img.shields.io/badge/Python-3.10-blue) ![TensorFlow](https://img.shields.io/badge/TensorFlow-DeepLearning-orange) ![Flask](https://img.shields.io/badge/Flask-WebApp-black) 
 
 ### AI-Based Multi-Cancer Detection & Subtype Classification System
 
