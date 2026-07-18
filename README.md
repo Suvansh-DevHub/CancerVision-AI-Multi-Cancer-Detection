@@ -46,26 +46,26 @@ The platform combines automated organ identification, multi-model inference, exp
 
 ## 🧬 Supported Cancer Types
 
-## Lung
+### Lung
 
 - Adenocarcinoma
 - Large Cell Carcinoma
 - Squamous Cell Carcinoma
 - Normal
 
-## Brain
+### Brain
 
 - Glioma
 - Meningioma
 - Pituitary Tumor
 - Normal
 
-## Breast
+### Breast
 
 - Cancer
 - Normal
 
-## Skin
+### Skin
 
 - Basal Cell Carcinoma
 - Melanoma
