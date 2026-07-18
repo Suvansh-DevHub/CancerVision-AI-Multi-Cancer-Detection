@@ -216,3 +216,28 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Virtual Environments
+venv_ai/
+.venv_tf/
+
+# Python cache
+__pycache__/
+
+# Runtime files
+logs/
+reports/
+
+# Uploaded images generated during inference
+static/uploaded/
+
+# Generated Grad-CAM images (optional)
+static/gradcam*.jpg
+
+# Local CSV logs
+inference_log.csv
+
+# OS files
+.DS_Store
+Thumbs.db
