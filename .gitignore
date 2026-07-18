@@ -243,3 +243,8 @@ inference_log.csv
 # OS files
 .DS_Store
 Thumbs.db
+
+
+# Generated reports
+reports/*
+!reports/.gitkeep
